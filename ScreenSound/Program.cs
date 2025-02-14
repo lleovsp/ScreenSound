@@ -1,12 +1,6 @@
 ﻿using ScreenSound.Models;
 using ScreenSound.Menus;
-using OpenAI_API;
 
-var client = new OpenAIAPI("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");
-var chat = client.Chat.CreateConversation();
-chat.AppendSystemMessage("Resuma a banda Ira! em 1 parágrafo. Adote um linguajar informal.");
-string resposta = await chat.GetResponseFromChatbotAsync();
-Console.WriteLine(resposta);
 
 Dictionary<string, Banda> bandasRegistradas = new();
 bandasRegistradas.Add("Linkin Park", new Banda("Linkin Park"));
